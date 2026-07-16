@@ -54,3 +54,21 @@ html,body,#root{font-family:'Plus Jakarta Sans',sans-serif}.landing{height:100%;
  .error b{font-size:13px}.error p{font-size:13px}.error button{font-size:12px;min-height:50px}
 }
 @media(max-width:390px){.experience header button{width:44px;height:44px;min-width:44px}.camera{width:46vw}.guide-grid{grid-template-columns:1fr}.hero h1{font-size:18vw}}
+/* 9:16 portrait application layout */
+@media(max-width:480px) and (orientation:portrait){
+ .experience{background:radial-gradient(circle at 50% 58%,#22142f,#040308 72%)}
+ .experience header{position:absolute;top:auto;bottom:env(safe-area-inset-bottom);height:78px;padding:7px 8px 17px;display:grid;grid-template-columns:repeat(5,1fr);gap:5px;background:linear-gradient(0deg,#080711 75%,rgba(8,7,17,.82));border-top:1px solid rgba(255,255,255,.13);border-bottom:0;z-index:12}
+ .experience header .brand,.experience header .signal{display:none}.experience header .home-button{margin:0}
+ .experience header button{position:relative;width:100%;height:54px;min-width:0;border:0;border-radius:9px;background:rgba(255,255,255,.065);display:flex;align-items:flex-start;justify-content:center;padding-top:8px}
+ .experience header button:after{content:attr(aria-label);position:absolute!important;inset:auto 2px 5px!important;border:0!important;white-space:nowrap;text-align:center;color:#8e96aa;font:6.5px DM Mono;letter-spacing:.04em;transform:none!important}
+ .experience header button svg{width:17px;height:17px}.experience header button:nth-of-type(4){font-size:16px;padding-top:5px}
+ .camera{left:12px;right:12px;top:calc(env(safe-area-inset-top) + 14px);width:auto;height:min(29dvh,210px);border-radius:10px;box-shadow:0 16px 45px #0009}.camera video,.camera canvas{height:calc(100% - 32px)}.camera label{height:32px;padding:11px 12px;font-size:8px}
+ .readout{left:12px;right:12px;top:calc(env(safe-area-inset-top) + min(29dvh,210px) + 25px);display:grid;grid-template-columns:1fr auto;align-items:center;padding:13px 15px;border:1px solid rgba(129,117,255,.25);border-left:3px solid #8175ff;border-radius:8px;background:rgba(9,8,18,.72);backdrop-filter:blur(12px)}
+ .readout small{grid-column:1;font-size:8px}.readout strong{grid-column:1;font-size:20px;margin:5px 0 0}.readout div{grid-column:2;grid-row:1/3;font-size:7px}.readout div i{display:none}
+ .formations{left:12px;right:12px;bottom:calc(90px + env(safe-area-inset-bottom));min-height:76px;padding:10px 12px;border-radius:12px;background:rgba(8,7,17,.82)}
+ .formations button{width:56px;height:56px;min-width:56px}.formations b{font-size:20px;max-width:48vw}.formations small{font-size:8px}
+ .settings{top:calc(env(safe-area-inset-top) + 10px);bottom:calc(88px + env(safe-area-inset-bottom));max-height:none;border-radius:12px;padding:30px 24px}
+ .guide{top:calc(env(safe-area-inset-top) + 8px);bottom:calc(env(safe-area-inset-bottom) + 8px);transform:translateX(-50%);max-height:none;height:auto;border-radius:12px;padding:28px 22px}.guide h2{font-size:34px}.guide-grid span{padding:15px}.guide p{font-size:13px}
+ .hand-cursor{z-index:60}
+}
+@media(max-width:480px) and (orientation:portrait) and (max-height:700px){.camera{height:25dvh}.readout{top:calc(env(safe-area-inset-top) + 25dvh + 25px)}.formations{min-height:68px}.formations button{width:50px;height:50px;min-width:50px}.guide h2{font-size:28px}.guide-grid span{padding:11px}}
