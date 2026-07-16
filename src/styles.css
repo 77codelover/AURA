@@ -40,3 +40,17 @@ html,body,#root{font-family:'Plus Jakarta Sans',sans-serif}.landing{height:100%;
 }
 @media(max-width:390px){.experience header{gap:4px;padding-left:7px;padding-right:7px}.experience header button{width:39px;height:39px;min-width:39px}.experience header .brand{display:none}.camera{width:112px}.guide-grid{grid-template-columns:1fr}.guide h2{font-size:23px}.hand-role{margin-top:12px}}
 @media(orientation:landscape) and (max-height:500px){.camera{top:66px;width:112px;height:86px}.camera video,.camera canvas{height:62px}.readout{top:160px}.formations{bottom:8px;left:25%;right:25%}.experience>footer{display:none}.fps{bottom:14px}.guide{max-height:94dvh}.guide-grid{grid-template-columns:repeat(3,1fr)}.right-guide{grid-template-columns:repeat(3,1fr)}}
+/* Mobile readability scale */
+@media(max-width:700px){
+ .home-nav{padding:0 18px}.home-logo{font-size:12px}.hero{left:20px;width:calc(100vw - 40px)}.hero .eyebrow{font-size:9px;letter-spacing:.14em}.hero h1{font-size:17vw}.hero p{font-size:14px;line-height:1.7}.start{min-height:64px}.start b{font-size:11px}.start small{font-size:9px}.hero .privacy b,.hero .privacy span{font-size:9px}
+ .experience header{height:68px}.experience header button{width:46px;height:46px;min-width:46px}.experience header button svg{width:18px;height:18px}.experience header .brand{top:27px;font-size:11px}
+ .camera{top:calc(env(safe-area-inset-top) + 80px);width:min(44vw,180px);height:137px}.camera video,.camera canvas{height:108px}.camera label{height:29px;padding:9px;font-size:8px}
+ .readout{top:calc(env(safe-area-inset-top) + 228px);padding:11px 0 11px 13px}.readout small{font-size:9px}.readout strong{font-size:19px;margin:7px 0}.readout div{font-size:8px}
+ .formations{bottom:calc(18px + env(safe-area-inset-bottom));padding:12px}.formations button{width:52px;height:52px;min-width:52px;font-size:30px}.formations b{font-size:19px;max-width:50vw}.formations small{font-size:8px;letter-spacing:.12em}
+ .fps{display:none}.experience>footer{display:none}
+ .settings{top:calc(env(safe-area-inset-top) + 76px);padding:28px 24px}.settings h2{font-size:14px}.settings label{font-size:12px;margin:24px 0}.settings input{height:36px}.settings .reset{width:100%;min-height:50px;font-size:11px}
+ .guide{padding:26px 22px}.guide>small{font-size:9px}.guide h2{font-size:31px;margin:12px 0 18px}.hand-role strong,.hand-role span{font-size:9px}.guide-grid span{padding:14px;font-size:9px;line-height:1.45}.guide-grid b{font-size:13px}.guide p{font-size:12px;line-height:1.6}.guide .gotit{font-size:11px;min-height:52px}
+ .hand-cursor{width:50px;height:50px;margin:-25px 0 0 -25px;border-width:2px}.hand-cursor span{inset:18px}
+ .error b{font-size:13px}.error p{font-size:13px}.error button{font-size:12px;min-height:50px}
+}
+@media(max-width:390px){.experience header button{width:44px;height:44px;min-width:44px}.camera{width:46vw}.guide-grid{grid-template-columns:1fr}.hero h1{font-size:18vw}}
