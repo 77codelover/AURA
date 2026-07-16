@@ -72,3 +72,10 @@ html,body,#root{font-family:'Plus Jakarta Sans',sans-serif}.landing{height:100%;
  .hand-cursor{z-index:60}
 }
 @media(max-width:480px) and (orientation:portrait) and (max-height:700px){.camera{height:25dvh}.readout{top:calc(env(safe-area-inset-top) + 25dvh + 25px)}.formations{min-height:68px}.formations button{width:50px;height:50px;min-width:50px}.guide h2{font-size:28px}.guide-grid span{padding:11px}}
+/* Responsive 16:9 wide optical feed */
+@media(min-width:701px){.camera{width:320px;height:206px}.camera video,.camera canvas{height:180px;object-fit:cover}.readout{top:326px}}
+@media(min-width:1800px){.camera{width:380px;height:240px}.camera video,.camera canvas{height:214px}.readout{top:360px}}
+@media(max-width:700px){.camera{aspect-ratio:auto}.camera video,.camera canvas{object-fit:cover}}
+@media(max-width:480px) and (orientation:portrait){.camera{height:calc((100vw - 24px)*.5625 + 32px);max-height:246px}.camera video,.camera canvas{height:calc(100% - 32px)}.readout{top:calc(env(safe-area-inset-top) + min(calc((100vw - 24px)*.5625 + 32px),246px) + 25px)}}
+@media(max-width:480px) and (orientation:portrait) and (max-height:700px){.camera{height:calc((100vw - 24px)*.48 + 32px)}.readout{top:calc(env(safe-area-inset-top) + (100vw - 24px)*.48 + 57px)}}
+@media(orientation:landscape) and (max-height:500px){.camera{width:210px;height:150px}.camera video,.camera canvas{height:124px}.readout{left:224px;top:70px}}
